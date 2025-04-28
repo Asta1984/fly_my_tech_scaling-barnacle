@@ -1,8 +1,10 @@
-"use client";
-
+"use client"
+import { useRouter } from 'next/navigation'
 import { Button } from "@/components/ui/button";
 
 export function NotFoundPage() {
+  const router = useRouter()
+
   return (
     <section className="bg-white font-serif min-h-screen flex items-center justify-center">
       <div className="container mx-auto">
